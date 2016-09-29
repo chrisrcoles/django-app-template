@@ -20,6 +20,13 @@ def home(request):
     # return render(request, "home.html", {'page_loads':page_loads})
     return render(request, "home.html")
 
+def login(request):
+    page_load = PageLoad()
+
+    # return render_to_response(template)
+    return render(request, "login.html")
+
+
 
 # This block of code checks for changes to your code every five seconds
 # and reloads the app if there are changes. This only runs in dev mode.
